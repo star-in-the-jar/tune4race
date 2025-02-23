@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/tune4race",
-  assetPrefix: "/tune4race/",
+  basePath: process.env.NODE_ENV === "production" ? "/tune4race" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/tune4race/" : "",
 };
 
 export default nextConfig;
