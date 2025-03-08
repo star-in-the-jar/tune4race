@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex flex-wrap justify-center items-center gap-6 row-start-3">
+        <footer className="flex flex-wrap justify-center items-center gap-6 row-start-3 h-[500px]">
             this is footer
         </footer>
     );
