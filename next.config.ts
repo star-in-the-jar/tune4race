@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+console.log("process.env.NEXT_PUBLIC_GH_PAGES", process.env.NEXT_PUBLIC_GH_PAGES);
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -6,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/tune4race" : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/tune4race/" : "",
+  basePath: process.env.NEXT_PUBLIC_GH_PAGES === "yes" ? "/tune4race" : "",
+  assetPrefix: process.env.NEXT_PUBLIC_GH_PAGES === "yes" ? "/tune4race/" : "",
 };
 
 export default nextConfig;

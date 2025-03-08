@@ -40,6 +40,8 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
+      - name: Set NEXT_PUBLIC_GH_PAGES to yes
+        run: echo "NEXT_PUBLIC_GH_PAGES=yes" >> $GITHUB_ENV
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
