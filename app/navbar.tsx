@@ -3,53 +3,11 @@
 import { FC, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-import {
-  DirectionsCarOutlined as CarIcon,
-  ConstructionOutlined as ToolsIcon,
-  CarRepair as CarRepairIcon,
-  ReviewsOutlined as ReviewsIcon,
-  GroupsOutlined as PartnersIcon,
-  PhoneOutlined as ContactIcon,
-} from "@mui/icons-material";
 import MobileMenuButton from "./components/mobileMenuButton";
+import { links } from "./utils/menuLinks";
 
 const NavBar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const ICON_SIZE = "large";
-  const links = [
-    {
-      href: "#about",
-      label: "o firmie",
-      icon: <CarRepairIcon fontSize={ICON_SIZE} />,
-    },
-    {
-      href: "#projects",
-      label: "realizacje",
-      icon: <CarIcon fontSize={ICON_SIZE} />,
-    },
-    {
-      href: "#service",
-      label: "serwis",
-      icon: <ToolsIcon fontSize={ICON_SIZE} />,
-    },
-    {
-      href: "#partners",
-      label: "partnerzy",
-      icon: <PartnersIcon fontSize={ICON_SIZE} />,
-    },
-    {
-      href: "#reviews",
-      label: "opinie",
-      icon: <ReviewsIcon fontSize={ICON_SIZE} />,
-    },
-    {
-      href: "#contact",
-      label: "kontakt",
-      icon: <ContactIcon fontSize={ICON_SIZE} />,
-    },
-  ];
 
   return (
     <nav>

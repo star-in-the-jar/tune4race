@@ -14,6 +14,7 @@ export default {
         ternary: "var(--ternary)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary-dark": "var(--primary-dark)",
       },
       backgroundImage: {
         "primary-gradient": "var(--gradient-primary)",
@@ -41,7 +42,7 @@ export default {
         "clamp-title-s": "clamp(var(--subtitle-m), var(--title-s), var(--title-m))",
         "clamp-title-m": "clamp(var(--title-s), var(--title-m), var(--title-l))",
         "clamp-title-l": "clamp(var(--title-m), var(--title-l), var(--title-xl))",
-        "clamp-title-xl": "clamp(var(--title-l), var(--title-xl), var(--title-xxl))",
+        "clamp-title-xl": "clamp(var(--title-l), var(--title-xl), var(--title-xl))",
         "text-s": "var(--text-s)",
         "text-m": "var(--text-m)",
         "subtitle-s": "var(--subtitle-s)",

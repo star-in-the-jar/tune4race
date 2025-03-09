@@ -9,27 +9,27 @@ export interface MobileMenuButtonProps {
 
 const MobileMenuButton: FC<MobileMenuButtonProps> = ({ isOpen, setIsOpen }) => {
   const mobileMenuButtonLineStyles =
-    "block bg-white rounded-full absolute w-12 h-little-xxs ease transition-all duration-500";
+    "block bg-primary rounded-full absolute w-10 h-[5px] ease transition-all duration-500 left-1/2 translate-x-[-50%]";
 
   return (
     <div
-      className={`z-10 right-0 absolute flex flex-col gap-2 py-little-xl px-little-l`}
+      className={`z-10 right-little-m bottom-little-m fixed flex flex-col gap-2 w-[60px] h-[60px] bg-background rounded-2xl p-little-xs `}
       onClick={() => setIsOpen((isOpen: boolean) => !isOpen)}
     >
-      <div className="relative w-12 h-8">
+      <div className="relative">
         <span
           className={`${mobileMenuButtonLineStyles} ${
-            isOpen ? "rotate-[135deg] translate-y-3" : "translate-y-0"
+            isOpen ? "rotate-[135deg] translate-y-5" : "translate-y-2"
           }`}
         ></span>
         <span
           className={`${mobileMenuButtonLineStyles} ${
-            isOpen ? "rotate-[360deg] opacity-0 scale-0" : "translate-y-3"
+            isOpen ? "rotate-[360deg] opacity-0 scale-0" : "translate-y-5"
           }`}
         ></span>
         <span
           className={`${mobileMenuButtonLineStyles} ${
-            isOpen ? "rotate-[225deg] translate-y-3" : "translate-y-6"
+            isOpen ? "rotate-[225deg] translate-y-5" : "translate-y-8"
           }`}
         ></span>
       </div>

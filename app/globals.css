@@ -10,6 +10,8 @@
   --secondary: #3D52D5;
   --ternary: #EFA00B;
 
+  --primary-dark: #8A0003;
+
   --gradient-primary: linear-gradient(to right, var(--primary) 0%, var(--primary) 100%);
   --gradient-primary-transparent: linear-gradient(to right, var(--primary) 20%, rgba(202, 1, 21, 0.5) 100%);
   --gradient-primary-dark-10: linear-gradient(to bottom, var(--primary) 0%, color-mix(in srgb, var(--primary) 90%, black) 100%);
@@ -48,5 +50,20 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Oxygen, sans-serif;
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 }
