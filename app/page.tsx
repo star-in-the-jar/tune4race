@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 
 export default function Home() {
+
   return (
     <div>
-      <div className="relative w-full h-auto">
+      <div className={`relative w-full h-auto`}>
         <Image
           src="hero-image.jpg"
           alt="Racing custom car with K22 engine"
