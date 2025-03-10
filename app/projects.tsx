@@ -34,8 +34,8 @@ const Projects: FC = () => {
           (card) => (
             <FlippingCard
               key={projectCards.indexOf(card)}
-              srcFront={card.srcFront}
-              srcBack={card.srcBack}
+              front={card.front}
+              back={card.back}
             />
           )
         )}

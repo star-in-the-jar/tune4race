@@ -10,6 +10,7 @@ export default function Home() {
           src="hero-image.jpg"
           alt="Racing custom car with K22 engine"
           layout="responsive"
+          loading="eager"
           width={1920}
           height={1080}
           objectFit="contain"
