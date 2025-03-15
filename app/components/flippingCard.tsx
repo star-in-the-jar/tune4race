@@ -1,6 +1,7 @@
 "use client";
 import { FC } from "react";
 import { LazyImage } from "./lazyImage";
+import FlippingCardDetails, { Details } from "./flippingCardDetails";
 
 interface ImageCard {
   src: string;
@@ -10,9 +11,10 @@ interface ImageCard {
 export interface FlippingCardProps {
   front: ImageCard;
   back: ImageCard;
+  details?: Details;
 }
 
-const FlippingCard: FC<FlippingCardProps> = ({ front, back }) => {
+const FlippingCard: FC<FlippingCardProps> = ({ front, back, details }) => {
   return (
     <div className={`group mx-auto w-full perspective`}>
       <div className="relative w-full transform-style-3d group-hover:rotate-y-180 transition-transform duration-500">
@@ -28,9 +30,19 @@ const FlippingCard: FC<FlippingCardProps> = ({ front, back }) => {
           <LazyImage
             src={back.src}
             alt="Card Back Side - before"
-            className="rounded-xl"
+            className="z-5 rounded-xl"
             blurHash={back.blurHash}
           />
+          {details && (
+            <FlippingCardDetails
+              model={details.model}
+              features={details.features}
+              // className="z-6"
+            />
+          )}
+          {/* <div className="bottom-0 left-0 z-10 absolute bg-blue-200 bg-opacity-25 w-full h-20">
+            // helo 000000000000000sdfsdfsdf //{" "}
+          </div> */}
         </div>
       </div>
     </div>

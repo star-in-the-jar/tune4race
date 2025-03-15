@@ -4,17 +4,29 @@
 
 :root {
   --background: #303030;
-  --foreground: #E9FFF9;
+  --foreground: #e9fff9;
 
-  --primary: #CA0115;
-  --secondary: #3D52D5;
-  --ternary: #EFA00B;
+  --primary: #ca0115;
+  --secondary: #3d52d5;
+  --ternary: #efa00b;
 
-  --primary-dark: #8A0003;
+  --primary-dark: #8a0003;
 
-  --gradient-primary: linear-gradient(to right, var(--primary) 0%, var(--primary) 100%);
-  --gradient-primary-transparent: linear-gradient(to right, var(--primary) 20%, rgba(202, 1, 21, 0.5) 100%);
-  --gradient-primary-dark-10: linear-gradient(to bottom, var(--primary) 0%, color-mix(in srgb, var(--primary) 90%, black) 100%);
+  --gradient-primary: linear-gradient(
+    to right,
+    var(--primary) 0%,
+    var(--primary) 100%
+  );
+  --gradient-primary-transparent: linear-gradient(
+    to right,
+    var(--primary) 20%,
+    rgba(202, 1, 21, 0.5) 100%
+  );
+  --gradient-primary-dark-10: linear-gradient(
+    to bottom,
+    var(--primary) 0%,
+    color-mix(in srgb, var(--primary) 90%, black) 100%
+  );
 
   --space-big-s: 60px;
   --space-big-m: 100px;
@@ -37,7 +49,6 @@
   --title-m: 3rem;
   --title-l: 4rem;
   --title-xl: 6rem;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,4 +77,10 @@ body {
   .rotate-y-180 {
     transform: rotateY(180deg);
   }
+}
+
+.outlined-text {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  -webkit-text-stroke: 0.5px black;
 }

@@ -3,6 +3,26 @@ import { FlippingCardProps } from "../components/flippingCard";
 export const projectCards: FlippingCardProps[] = [
   {
     front: {
+      src: "project_porshe_after.jpg",
+      blurHash: "LRD0v0-:xboz?ws.jvWXaIRPWCWC",
+    },
+    back: {
+      src: "project_porshe_before.jpg",
+      blurHash: "LeG8_.ofM_WC_Nt7IUjt_2WBNGj[",
+    },
+    details: {
+      model: "Porshe 911",
+      features: [
+        "Montaż spoilera",
+        "Obniżenie zawieszenia",
+        "Montaż felg",
+        "Malowanie zacisków",
+        "Montaż układu dolotowego",
+      ],
+    },
+  },
+  {
+    front: {
       src: "project_acura-rsx-k20_after.jpg",
       blurHash: "LDBWe~Rj00%MNFoextt700%L~qM{",
     },
@@ -90,6 +110,34 @@ export const projectCards: FlippingCardProps[] = [
     back: {
       src: "project_s2000-k20_before.jpg",
       blurHash: "LCDvZh_NEL_3DiIoR-M{8_-;?cIU",
+    },
+  },
+  {
+    front: {
+      src: "project_smart-roadster-blue_after.jpg",
+      blurHash: "LMEWIIt2$~Rh~UkBNLWY]^S6NLo$",
+    },
+    back: {
+      src: "project_smart-roadster-blue_after.jpg",
+      blurHash: "LMEWIIt2$~Rh~UkBNLWY]^S6NLo$",
+    },
+    details: {
+      model: "Smart Roadster 452",
+      features: ["Tuning wizualny", "Montaż spoilera", "Montaż dokładki", "Wloty powietrza", "Sprężyny obniżające", "Centralny wydech", "Felgi Brabus"],
+    },
+  },
+  {
+    front: {
+      src: "project_smart-roadster-white_after.jpg",
+      blurHash: "L4F~8R?v00Dj}$R+?c%f00I]~q$*",
+    },
+    back: {
+      src: "project_smart-roadster-white_after.jpg",
+      blurHash: "L4F~8R?v00Dj}$R+?c%f00I]~q$*",
+    },
+    details: {
+      model: "Smart Roadster 452",
+      features: ["Klatka bezpieczeństwa", "Bezpieczny zbiornik", "Swap silnika Honda K20a2"],
     },
   },
 ];

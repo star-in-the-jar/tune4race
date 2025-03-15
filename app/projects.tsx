@@ -9,7 +9,10 @@ const Projects: FC = () => {
   const [shouldShowMore, setShouldShowMore] = useState(false);
 
   return (
-    <section className="mt-[10vh] w-full h-auto scroll-mt-[10vh]" id="realizacje">
+    <section
+      className="mt-[10vh] w-full h-auto scroll-mt-[10vh]"
+      id="realizacje"
+    >
       <div className="isolate relative w-full h-auto">
         <Image
           className="z-1"
@@ -38,13 +41,20 @@ const Projects: FC = () => {
             key={projectCards.indexOf(card)}
             front={card.front}
             back={card.back}
+            details={card?.details}
           />
         ))}
       </div>
       <Show>
         <If condition={!shouldShowMore}>
           <div className="flex justify-center pt-little-l w-full">
-            <Button onClick={() => setShouldShowMore((shouldShowMore) => !shouldShowMore)} label="Pokaż Więcej" variant={ButtonVariant.SECONDARY} />
+            <Button
+              onClick={() =>
+                setShouldShowMore((shouldShowMore) => !shouldShowMore)
+              }
+              label="Pokaż Więcej"
+              variant={ButtonVariant.SECONDARY}
+            />
           </div>
         </If>
       </Show>
