@@ -9,10 +9,9 @@ export default function Home() {
         <Image
           src="hero-image.jpg"
           alt="Racing custom car with K22 engine"
-          layout="responsive"
           width={1920}
           height={1080}
-          objectFit="contain"
+          className="w-full h-full object-cover"
         />
       </section>
       <Projects />

@@ -2,35 +2,94 @@ import { FlippingCardProps } from "../components/flippingCard";
 
 export const projectCards: FlippingCardProps[] = [
   {
-    srcFront: "project_acura-rsx-k20_after.jpg",
-    srcBack: "project_acura-rsx-k20_before.jpg",
+    front: {
+      src: "project_acura-rsx-k20_after.jpg",
+      blurHash: "LDBWe~Rj00%MNFoextt700%L~qM{",
+    },
+    back: {
+      blurHash: "LOBpnRI9t7Rj~pM{RPae-pR.M{WB",
+      src: "project_acura-rsx-k20_before.jpg",
+    },
   },
   {
-    srcFront: "project_smart-roadster-k20_after.jpg",
-    srcBack: "project_smart-roadster-k20_before.jpg",
+    front: {
+      src: "project_smart-roadster-k20_after.jpg",
+      blurHash: "LFGIDmxZ?b?v~W-;%g%g?bkD-:Wr",
+    },
+    back: {
+      src: "project_smart-roadster-k20_before.jpg",
+      blurHash: "L2AmrB8w00t-9yZ3]p*000r@4T?v",
+    },
   },
   {
-    srcFront: "project_honda-del-sol-k20-indy-yellow_after.jpg",
-    srcBack: "project_honda-del-sol-k20-indy-yellow_before.jpg",
+    front: {
+      src: "project_honda-del-sol-k20-indy-yellow_after.jpg",
+      blurHash: "L4ELybbtR;xT000pDO-h0IrW-oJr",
+    },
+    back: {
+      src: "project_honda-del-sol-k20-indy-yellow_before.jpg",
+      blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
+    },
   },
   {
-    srcFront: "project_acura-rsx-k20-time-attack_after.jpg",
-    srcBack: "project_acura-rsx-k20-time-attack_before.jpg",
+    front: {
+      src: "project_honda-integra-type-r-k20-time-attack_after.jpg",
+      blurHash: "L4ELybbtR;xT000pDO-h0IrW-oJr",
+    },
+    back: {
+      src: "project_honda-integra-type-r-k20-time-attack_before.jpg",
+      blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
+    },
+  },
+
+  {
+    front: {
+      src: "project_honda-integra-type-r-k24_after.jpg",
+      blurHash: "LAB3=~n~00IV~ps,9GM|9FxZo#NG",
+    },
+    back: {
+      src: "project_honda-integra-type-r-k24_before.jpg",
+      blurHash: "LFEC]#9Y0J?bxNRiDi%2D$xvxcIT",
+    },
   },
   {
-    srcFront: "project_honda-civic_after.jpg",
-    srcBack: "project_honda-civic_before.jpg",
+    front: {
+      src: "project_honda-civic_after.jpg",
+      blurHash: "LHF5~vxs~pD*%Lt7t8M{oZM}M|oc",
+    },
+    back: {
+      src: "project_honda-civic_before.jpg",
+      blurHash: "LLGSA3S|$^fg%.t1W9S2}~rrNLoh",
+    },
   },
   {
-    srcFront: "project_honda-integra-type-r-k20-time-attack_after.jpg",
-    srcBack: "project_honda-integra-type-r-k20-time-attack_before.jpg",
+    front: {
+      src: "project_acura-rsx-k20-time-attack_after.jpg",
+      blurHash: "L45;]w^-?aa0.8?J%MRPxa%MxaV?",
+    },
+    back: {
+      src: "project_acura-rsx-k20-time-attack_before.jpg",
+      blurHash: "LWH2cqof~qogRjRj%2j[-;WBWBs:",
+    },
   },
   {
-    srcFront: "project_lotus_after.jpg",
-    srcBack: "project_lotus_before.jpg",
+    front: {
+      src: "project_lotus_after.jpg",
+      blurHash: "LcIER;IobvxZ?wi_aKW;KjxusoRk",
+    },
+    back: {
+      src: "project_lotus_before.jpg",
+      blurHash: "LMFNh%-TAZoe0$X7,DR+|[aLEhWC",
+    },
   },
   {
-    srcFront: "project_s2000-k20_after.jpg",
-    srcBack: "project_s2000-k20_before.jpg",
+    front: {
+      src: "project_s2000-k20_after.jpg",
+      blurHash: "LMEMOe9c~4nfISV[NGs:9D$iETS5",
+    },
+    back: {
+      src: "project_s2000-k20_before.jpg",
+      blurHash: "LCDvZh_NEL_3DiIoR-M{8_-;?cIU",
+    },
   },
 ];

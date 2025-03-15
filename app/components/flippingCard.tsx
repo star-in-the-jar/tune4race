@@ -1,32 +1,35 @@
-import Image from "next/image";
+"use client";
 import { FC } from "react";
+import { LazyImage } from "./lazyImage";
 
-export interface FlippingCardProps {
-  srcFront: string;
-  srcBack: string;
-  flexBasis?: string;
+interface ImageCard {
+  src: string;
+  blurHash: string;
 }
 
-const FlippingCard: FC<FlippingCardProps> = ({ srcFront, srcBack }) => {
+export interface FlippingCardProps {
+  front: ImageCard;
+  back: ImageCard;
+}
+
+const FlippingCard: FC<FlippingCardProps> = ({ front, back }) => {
   return (
     <div className={`group mx-auto w-full perspective`}>
       <div className="relative w-full transform-style-3d group-hover:rotate-y-180 transition-transform duration-500">
         <div className="inset-1 flex justify-center items-center min-h-[200px] md:min-h-[300px] xl:min-h-[400px] overflow-hidden backface-hidden">
-          <Image
-            src={srcFront}
-            alt="Front Side"
-            layout="fill"
-            objectFit="cover"
+          <LazyImage
+            src={front.src}
+            alt="Card front Side - after"
             className="rounded-xl"
+            blurHash={front.blurHash}
           />
         </div>
         <div className="absolute inset-1 flex justify-center items-center rounded-lg min-h-[200px] md:min-h-[300px] xl:min-h-[400px] rotate-y-180 backface-hidden">
-          <Image
-            src={srcBack}
-            alt="Back Side"
-            layout="fill"
-            objectFit="cover"
+          <LazyImage
+            src={back.src}
+            alt="Card Back Side - before"
             className="rounded-xl"
+            blurHash={back.blurHash}
           />
         </div>
       </div>
