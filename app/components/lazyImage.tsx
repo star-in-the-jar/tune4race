@@ -10,7 +10,7 @@ export const LazyImage = ({
 }: {
   src: string;
   alt: string;
-  className: string;
+  className?: string;
   blurHash: string;
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);

@@ -54,6 +54,7 @@ const Projects: FC = () => {
               }
               label="Pokaż Więcej"
               variant={ButtonVariant.SECONDARY}
+              className="mt-big-s"
             />
           </div>
         </If>

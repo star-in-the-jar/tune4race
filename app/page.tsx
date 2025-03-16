@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Projects from "./projects";
+import CallToAction from "./callToAction";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         />
       </section>
       <Projects />
+      <CallToAction />
       <footer className="flex flex-wrap justify-center items-center gap-6 row-start-3"></footer>
     </div>
   );
