@@ -18,7 +18,9 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <NavBar/>
+        <div className="z-10 isolate fixed">
+         <NavBar />
+        </div>
         <main>{children}</main>
         <Footer />
       </body>

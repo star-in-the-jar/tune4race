@@ -40,7 +40,7 @@ const FlippingCard: FC<FlippingCardProps> = ({ front, back, details }) => {
               // className="z-6"
             />
           )}
-          {/* <div className="bottom-0 left-0 z-10 absolute bg-blue-200 bg-opacity-25 w-full h-20">
+          {/* <div className="bottom-0 left-0 z-8 absolute bg-blue-200 bg-opacity-25 w-full h-20">
             // helo 000000000000000sdfsdfsdf //{" "}
           </div> */}
         </div>

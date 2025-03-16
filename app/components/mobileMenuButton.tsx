@@ -13,7 +13,7 @@ const MobileMenuButton: FC<MobileMenuButtonProps> = ({ isOpen, setIsOpen }) => {
 
   return (
     <div
-      className={`z-10 right-little-m bottom-little-m fixed flex flex-col gap-2 w-[60px] h-[60px] bg-background rounded-2xl p-little-xs `}
+      className={`md:hidden fixed z-10 right-little-m bottom-little-m flex flex-col gap-2 w-[60px] h-[60px] bg-background rounded-2xl p-little-xs `}
       onClick={() => setIsOpen((isOpen: boolean) => !isOpen)}
     >
       <div className="relative">

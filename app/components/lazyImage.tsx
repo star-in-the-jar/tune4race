@@ -36,7 +36,7 @@ export const LazyImage = ({
           resolutionY={32}
           punch={1}
           className={`w-full h-full transition ease 300ms ${
-            isLoaded ? "opacity-0 translate-y-3" : "opacity-50 z-10"
+            isLoaded ? "opacity-0 translate-y-3" : "opacity-50 z-8"
           }`}
         />
       </div>
