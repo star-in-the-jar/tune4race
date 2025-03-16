@@ -3,7 +3,7 @@ import {
   ConstructionOutlined as ToolsIcon,
   CarRepair as CarRepairIcon,
   ReviewsOutlined as ReviewsIcon,
-  GroupsOutlined as PartnersIcon,
+  // GroupsOutlined as PartnersIcon,
   PhoneOutlined as ContactIcon,
 } from "@mui/icons-material";
 
@@ -24,11 +24,11 @@ export const links = [
     label: "serwis",
     icon: <ToolsIcon fontSize={ICON_SIZE} />,
   },
-  {
-    href: "#partnerzy",
-    label: "partnerzy",
-    icon: <PartnersIcon fontSize={ICON_SIZE} />,
-  },
+  // {
+  //   href: "#partnerzy",
+  //   label: "partnerzy",
+  //   icon: <PartnersIcon fontSize={ICON_SIZE} />,
+  // },
   {
     href: "#opinie",
     label: "opinie",

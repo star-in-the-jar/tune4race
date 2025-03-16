@@ -12,6 +12,8 @@
 
   --primary-dark: #8a0003;
   --secondary-dark: #2a38a0;
+  --foreground-80: color-mix(in srgb, var(--foreground) 80%, black);
+
   --gradient-primary: linear-gradient(
     to right,
     var(--primary) 0%,
@@ -26,6 +28,16 @@
     to bottom,
     var(--primary) 0%,
     color-mix(in srgb, var(--primary) 90%, black) 100%
+  );
+  --gradient-secondary-polished: linear-gradient(
+    to bottom right,
+    var(--secondary) 0%,
+    color-mix(in srgb, var(--secondary) 30%, black) 100%
+  );
+--gradient-background-polished: linear-gradient(
+    to top,
+    var(--background) 30%,
+    color-mix(in srgb, var(--background) 95%, white) 100%
   );
 
   --space-big-s: 60px;

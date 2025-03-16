@@ -6,7 +6,7 @@ const ServicedByUs = () => {
   return (
     <section>
       <Subsection title="Serwisowane u Nas">
-        <div className="gap-little-l grid md:grid-cols-2 px-little-l md:px-big-s rounded-md">
+        <div className="gap-little-l grid md:grid-cols-2 px-little-l md:px-big-s pt-little-xl rounded-md">
           {servicedByUsCards.map((card, index) => (
             <Image
               key={index}

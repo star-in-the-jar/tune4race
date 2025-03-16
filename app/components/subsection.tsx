@@ -4,11 +4,12 @@ interface SubsectionProps {
   title: string;
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }
 
-const Subsection = ({ title, children, className }: SubsectionProps) => {
+const Subsection = ({ title, children, className, id }: SubsectionProps) => {
   return (
-    <section className={`relative mt-big-s `}>
+    <section id={id} className={`relative mt-big-s `}>
       <Image
         src="arrows-primary.svg"
         alt="Arrows pointing to the right"

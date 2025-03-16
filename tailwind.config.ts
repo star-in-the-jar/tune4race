@@ -16,11 +16,14 @@ export default {
         foreground: "var(--foreground)",
         "primary-dark": "var(--primary-dark)",
         "secondary-dark": "var(--secondary-dark)",
+        "foreground-80": "var(--foreground-80)",
       },
       backgroundImage: {
         "primary-gradient": "var(--gradient-primary)",
         "primary-transparent-gradient": "var(--gradient-primary-transparent)",
         "primary-dark-10-gradient": "var(--gradient-primary-dark-10)",
+        "secondary-polished-gradient": "var(--gradient-secondary-polished)",
+        "background-polished-gradient": "var(--gradient-background-polished)",
       },
       spacing: {
         "big-s": "var(--space-big-s)",
@@ -37,9 +40,9 @@ export default {
       },
       fontSize: {
         "clamp-text-s": "clamp(var(--text-s), var(--text-s), var(--text-m))",
-        "clamp-text-m": "clamp(var(--text-s), var(--text-m), var(--text-subtitle-s))",
-        "clamp-subtitle-s": "clamp(var(--text-m), var(--text-subtitle-s), var(--text-subtitle-m))",
-        "clamp-subtitle-m": "clamp(var(--text-subtitle-s), var(--text-subtitle-m), var(--text-title-s))",
+        "clamp-text-m": "clamp(var(--text-s), var(--text-m), var(--subtitle-s))",
+        "clamp-subtitle-s": "clamp(var(--text-m), var(--subtitle-s), var(--subtitle-m))",
+        "clamp-subtitle-m": "clamp(var(--subtitle-s), var(--subtitle-m), var(--title-s))",
         "clamp-title-s": "clamp(var(--subtitle-m), var(--title-s), var(--title-m))",
         "clamp-title-m": "clamp(var(--title-s), var(--title-m), var(--title-l))",
         "clamp-title-l": "clamp(var(--title-m), var(--title-l), var(--title-xl))",

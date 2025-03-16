@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Button from "./components/button";
 
-import { useState } from "react";
+import { FC, useState } from "react";
 
-const CallToAction = () => {
+interface CallToActionProps {
+  title: string;
+}
+
+const CallToAction: FC<CallToActionProps> = ({ title }: CallToActionProps) => {
   const [isNumberVisible, setIsNumberVisible] = useState(false);
 
   const handleClick = () => {
@@ -22,7 +26,7 @@ const CallToAction = () => {
       />
       <div className="top-0 left-0 absolute flex flex-col justify-center items-center w-full h-full">
         <h1 className="lg:w-2/3 text-clamp-title-s text-white md:text-clamp-title-l text-center">
-          GOTÓW STWORZYĆ SAMOCHÓD MARZEŃ?
+          {title}
         </h1>
         <Button label="ZADZWOŃ" onClick={handleClick} />
         <div

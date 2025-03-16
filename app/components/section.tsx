@@ -31,7 +31,7 @@ const Section = ({ children, title, id, image, imageAlt, className }: SectionPro
           width={768}
           height={512}
         />
-        <h1 className="top-0 right-little-xxl z-3 absolute font-bold text-clamp-title-s sm:text-clamp-title-m md:text-clamp-title-l">
+        <h1 className="top-0 right-little-xxl z-3 absolute font-bold text-clamp-title-s sm:text-clamp-title-m md:text-clamp-title-l uppercase">
           {title}
         </h1>
       </div>

@@ -14,7 +14,7 @@ const NavBar: FC = () => {
       <MobileMenuButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
 
       {isMenuOpen && (
-        <div className={`md:hidden top-0 z-9 fixed isolate h-full w-full `}>
+        <div className={`md:hidden top-0 z-9 fixed isolate h-full w-full `} onClick={() => setIsMenuOpen(false)}>
           <div
             className={`flex flex-col h-full align-middle justify-center transition-all ease-in-out duration-500 transform  ${
               isMenuOpen ? "opacity-100 " : "opacity-0"

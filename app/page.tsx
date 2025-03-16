@@ -4,16 +4,20 @@ import CallToAction from "./callToAction";
 import ServicedByUs from "./servicedByUs";
 import ComplexService from "./complexService";
 import Hero from "./hero";
+import About from "./about";
+import Reviews from "./reviews";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Projects />
-      <CallToAction />
+      <CallToAction title="GOTÓW STWORZYĆ SAMOCHÓD MARZEŃ?" />
       <ServicedByUs />
       <ComplexService />
-      <footer className="flex flex-wrap justify-center items-center gap-6 row-start-3"></footer>
+      <About />
+      <CallToAction title="WIDZIMY SIĘ NA MIEJSCU?" />
+      <Reviews />
     </div>
   );
 }
