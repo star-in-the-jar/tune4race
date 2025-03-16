@@ -7,30 +7,31 @@ interface SectionProps {
   id: string;
   image: string;
   imageAlt: string;
+  className?: string;
 }
 
-const Section = ({ children, title, id, image, imageAlt }: SectionProps) => {
+const Section = ({ children, title, id, image, imageAlt, className }: SectionProps) => {
   return (
     <section
-      className="mt-[10vh] w-full h-auto scroll-mt-[10vh]"
+      className={`mt-[10vh] w-full h-auto scroll-mt-[10vh] ${className}`}
       id={id}
     >
       <div className="isolate relative w-full h-auto">
-        <Image
-          className="z-1"
-          src="arrows-primary-big.svg"
-          alt="Arrows pointing to the right"
-          width={768}
-          height={512}
-        />
-        <Image
-          className="top-0 left z-2 absolute"
+         <Image
+          className="z-2 w-2/3 lg:w-1/2"
           src={image}
           alt={imageAlt}
           width={768}
           height={512}
         />
-        <h1 className="top-0 right-little-xxl z-3 absolute font-bold text-clamp-title-m sm:text-clamp-title-m md:text-clamp-title-xl">
+        <Image
+          className="top-0 left z-[-1] absolute"
+          src="arrows-primary.svg"
+          alt="Arrows pointing to the right"
+          width={768}
+          height={512}
+        />
+        <h1 className="top-0 right-little-xxl z-3 absolute font-bold text-clamp-title-s sm:text-clamp-title-m md:text-clamp-title-l">
           {title}
         </h1>
       </div>

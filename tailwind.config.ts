@@ -15,6 +15,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "primary-dark": "var(--primary-dark)",
+        "secondary-dark": "var(--secondary-dark)",
       },
       backgroundImage: {
         "primary-gradient": "var(--gradient-primary)",
@@ -36,7 +37,7 @@ export default {
       },
       fontSize: {
         "clamp-text-s": "clamp(var(--text-s), var(--text-s), var(--text-m))",
-        "clamp-text-m": "clamp(var(--text-s), var(--text-m), var(--text-subtitle-m))",
+        "clamp-text-m": "clamp(var(--text-s), var(--text-m), var(--text-subtitle-s))",
         "clamp-subtitle-s": "clamp(var(--text-m), var(--text-subtitle-s), var(--text-subtitle-m))",
         "clamp-subtitle-m": "clamp(var(--text-subtitle-s), var(--text-subtitle-m), var(--text-title-s))",
         "clamp-title-s": "clamp(var(--subtitle-m), var(--title-s), var(--title-m))",

@@ -11,7 +11,7 @@
   --ternary: #efa00b;
 
   --primary-dark: #8a0003;
-
+  --secondary-dark: #2a38a0;
   --gradient-primary: linear-gradient(
     to right,
     var(--primary) 0%,

@@ -2,13 +2,15 @@ import Image from "next/image";
 
 interface SubsectionProps {
   title: string;
+  children: React.ReactNode;
+  className?: string;
 }
 
-const Subsection = ({ title }: SubsectionProps) => {
+const Subsection = ({ title, children, className }: SubsectionProps) => {
   return (
-    <div className="relative mt-big-s">
+    <section className={`relative mt-big-s `}>
       <Image
-        src="arrows-primary-small.svg"
+        src="arrows-primary.svg"
         alt="Arrows pointing to the right"
         width={512}
         height={256}
@@ -17,7 +19,8 @@ const Subsection = ({ title }: SubsectionProps) => {
       <h2 className="top-0 left-little-xl absolute text-clamp-title-s md:text-clamp-title-m">
         {title}
       </h2>
-    </div>
+      <div className={`${className}`}>{children}</div>
+    </section>
   );
 };
 
