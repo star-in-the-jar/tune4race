@@ -8,7 +8,7 @@ const CallToAction = () => {
 
   const handleClick = () => {
     setIsNumberVisible(true);
-    window.location.href = "tel:+48123456789";
+    window.location.href = "tel:+48577500184";
   };
 
   return (
@@ -30,7 +30,7 @@ const CallToAction = () => {
             isNumberVisible ? "opacity-100" : "opacity-0"
           } transition-opacity duration-500 ease-in-out`}
         >
-          <p className="hidden md:block mt-4 outlined-text font-bold text-clamp-title-s text-white lg:text-clamp-title-m">577 500 184</p>
+          <p className="hidden md:block mt-4 font-bold text-clamp-title-s text-white lg:text-clamp-title-m">577 500 184</p>
         </div>
       </div>
     </section>

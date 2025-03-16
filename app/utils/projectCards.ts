@@ -118,8 +118,8 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LMEWIIt2$~Rh~UkBNLWY]^S6NLo$",
     },
     back: {
-      src: "project_smart-roadster-blue_after.jpg",
-      blurHash: "LMEWIIt2$~Rh~UkBNLWY]^S6NLo$",
+      src: "project_smart-roadster-blue_before.jpg",
+      blurHash: "LbGt{jjbx]%2?wV@s;ofPpofsoX7",
     },
     details: {
       model: "Smart Roadster 452",

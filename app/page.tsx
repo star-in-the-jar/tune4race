@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Projects from "./projects";
 import CallToAction from "./callToAction";
-
+import ServicedByUs from "./servicedByUs";
 export default function Home() {
   return (
     <div>
@@ -17,6 +17,7 @@ export default function Home() {
       </section>
       <Projects />
       <CallToAction />
+      <ServicedByUs />
       <footer className="flex flex-wrap justify-center items-center gap-6 row-start-3"></footer>
     </div>
   );

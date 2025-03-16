@@ -1,38 +1,25 @@
 import React, { FC, useState } from "react";
-import Image from "next/image";
 import FlippingCard from "./components/flippingCard";
 import { projectCards } from "./utils/projectCards";
 import { If, Show } from "multi-condition";
 import Button, { ButtonVariant } from "./components/button";
+import Subsection from "./components/subsection";
+import Section from "./components/section";
 
 const Projects: FC = () => {
   const [shouldShowMore, setShouldShowMore] = useState(false);
 
   return (
-    <section
-      className="mt-[10vh] w-full h-auto scroll-mt-[10vh]"
+  <Section
+      title="Nasze Projekty"
       id="realizacje"
+      image="section_lotus_after.png"
+      imageAlt="Lotus sports car"
     >
-      <div className="isolate relative w-full h-auto">
-        <Image
-          className="z-1"
-          src="arrows-primary-big.svg"
-          alt="Arrows pointing to the right"
-          width={768}
-          height={512}
-        />
-        <Image
-          className="top-0 left z-2 absolute"
-          src="section_lotus_after.png"
-          alt="Lotus sports car"
-          width={768}
-          height={512}
-        />
-        <h1 className="top-0 right-little-xxl z-3 absolute font-bold text-clamp-title-m sm:text-clamp-title-m md:text-clamp-title-xl">
-          REALIZACJE
-        </h1>
+      <div className="mt-big-l sm:mt-big-xl md:mt-big-xxl">
+        <Subsection title="Nasze Projekty" />
       </div>
-      <div className="gap-little-l md:gap-little-xxl grid grid-cols-1 md:grid-cols-2 md:mt-big-s px-little-l md:px-big-s pt-big-xl">
+      <div className="gap-little-l grid grid-cols-1 md:grid-cols-2 md:mt-big-s px-little-l md:px-big-s pt-little-l">
         {(shouldShowMore
           ? projectCards.slice(0, Math.trunc(projectCards.length / 2) * 2)
           : projectCards.slice(0, 2)
@@ -59,7 +46,7 @@ const Projects: FC = () => {
           </div>
         </If>
       </Show>
-    </section>
+    </Section>
   );
 };
 
