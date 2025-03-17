@@ -39,6 +39,7 @@ export default {
         "little-xxl": "var(--space-little-xxl)",
       },
       fontSize: {
+        "clamp-text-xs": "clamp(var(--text-xs), var(--text-xs), var(--text-s))",
         "clamp-text-s": "clamp(var(--text-s), var(--text-s), var(--text-m))",
         "clamp-text-m": "clamp(var(--text-s), var(--text-m), var(--subtitle-s))",
         "clamp-subtitle-s": "clamp(var(--text-m), var(--subtitle-s), var(--subtitle-m))",

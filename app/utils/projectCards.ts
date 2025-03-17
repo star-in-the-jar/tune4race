@@ -11,7 +11,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LeG8_.ofM_WC_Nt7IUjt_2WBNGj[",
     },
     details: {
-      model: "Porshe 911",
+      model: "Porsche 911",
       features: [
         "Montaż spoilera",
         "Obniżenie zawieszenia",

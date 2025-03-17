@@ -77,7 +77,7 @@ const ComplexService: FC = () => {
       </Subsection>
       <Subsection title="10 Letnie Doświadczenie" className="px-little-m md:px-big-s">
         <p className="py-little-xl text-clamp-text-s">
-            Dbamy o auta naszych klientów od lat i przez ten czas mieliśmy okację zobaczyć wiele oraz przekonać się jakie efekty dają różne podejścia. Zadbamy o wybór rozwiązań, na których można polegać.
+            Dbamy o auta naszych klientów od lat i przez ten czas mieliśmy okazję zobaczyć wiele oraz przekonać się jakie efekty dają różne podejścia. Zadbamy o wybór rozwiązań, na których można polegać.
         </p>
         <Image src="service_team.jpg" alt="Experience" width={1400} height={700} className="rounded-md"/>
       </Subsection>
