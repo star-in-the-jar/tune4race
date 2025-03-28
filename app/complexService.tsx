@@ -20,7 +20,7 @@ const ComplexService: FC = () => {
     "Mycie Ultradźwiękowe",
     "Układy Hamulcowe",
     "Wymiana Sprzęgła",
-  ].sort((a, b) => a.length - b.length);
+  ].map(service => service.toLowerCase()).sort((a, b) => a.length - b.length);
 
   const racingServices = [
     "Obsługa Techniczna na Torze",
@@ -29,7 +29,7 @@ const ComplexService: FC = () => {
     "Transport Autolawetą",
     "Ustawienie Samochodu na Wagach",
     "Poprawa Aerodynamiki",
-  ].sort((a, b) => a.length - b.length);
+  ].map(service => service.toLowerCase()).sort((a, b) => a.length - b.length);
 
   return (
     <Section

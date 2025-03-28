@@ -14,7 +14,10 @@ const NavBar: FC = () => {
       <MobileMenuButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
 
       {isMenuOpen && (
-        <div className={`md:hidden top-0 z-9 fixed isolate h-full w-full `} onClick={() => setIsMenuOpen(false)}>
+        <div
+          className={`md:hidden top-0 z-9 fixed isolate h-full w-full `}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <div
             className={`flex flex-col h-full align-middle justify-center transition-all ease-in-out duration-500 transform  ${
               isMenuOpen ? "opacity-100 " : "opacity-0"
@@ -38,8 +41,10 @@ const NavBar: FC = () => {
           <Image
             src="logo-mono-white.svg"
             alt="Tune4Race logo"
+            className="cursor-pointer"
             width={140}
             height={60}
+            onClick={() => window.scrollTo(0, 0)}
           />
           <div className="flex gap-x-little-xl text-clamp-subtitle-m">
             {links.map((link) => (

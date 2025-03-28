@@ -13,11 +13,11 @@ export const projectCards: FlippingCardProps[] = [
     details: {
       model: "Porsche 911",
       features: [
-        "Montaż spoilera",
-        "Obniżenie zawieszenia",
-        "Montaż felg",
-        "Malowanie zacisków",
-        "Montaż układu dolotowego",
+        // "Montaż spoilera",
+        // "Obniżenie zawieszenia",
+        // "Montaż felg",
+        // "Malowanie zacisków",
+        // "Montaż układu dolotowego",
       ],
     },
   },
@@ -123,9 +123,12 @@ export const projectCards: FlippingCardProps[] = [
     },
     details: {
       model: "Smart Roadster 452",
-      features: ["Tuning wizualny", "Montaż spoilera", "Montaż dokładki", "Wloty powietrza", "Sprężyny obniżające", "Centralny wydech", "Felgi Brabus"],
+      features: [
+        // "Tuning wizualny", "Montaż spoilera", "Montaż dokładki", "Wloty powietrza", "Sprężyny obniżające", "Centralny wydech", "Felgi Brabus"
+      ],
     },
   },
+
   {
     front: {
       src: "project_smart-roadster-white_after.jpg",
@@ -137,7 +140,9 @@ export const projectCards: FlippingCardProps[] = [
     },
     details: {
       model: "Smart Roadster 452",
-      features: ["Klatka bezpieczeństwa", "Bezpieczny zbiornik", "Swap silnika Honda K20a2"],
+      features: [
+        // "Klatka bezpieczeństwa", "Bezpieczny zbiornik", "Swap silnika Honda K20a2"
+      ],
     },
   },
 ];
