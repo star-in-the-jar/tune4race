@@ -12,13 +12,6 @@ export const projectCards: FlippingCardProps[] = [
     },
     details: {
       model: "Porsche 911",
-      features: [
-        // "Montaż spoilera",
-        // "Obniżenie zawieszenia",
-        // "Montaż felg",
-        // "Malowanie zacisków",
-        // "Montaż układu dolotowego",
-      ],
     },
   },
   {
@@ -30,6 +23,9 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LOBpnRI9t7Rj~pM{RPae-pR.M{WB",
       src: "project_acura-rsx-k20_before.jpg",
     },
+    details: {
+      model: "Acura RSX K20",
+    },
   },
   {
     front: {
@@ -39,6 +35,9 @@ export const projectCards: FlippingCardProps[] = [
     back: {
       src: "project_smart-roadster-k20_before.jpg",
       blurHash: "L2AmrB8w00t-9yZ3]p*000r@4T?v",
+    },
+    details: {
+      model: "Smart Roadster K20",
     },
   },
   {
@@ -50,6 +49,9 @@ export const projectCards: FlippingCardProps[] = [
       src: "project_honda-del-sol-k20-indy-yellow_before.jpg",
       blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
     },
+    details: {
+      model: "Honda Del Sol K20",
+    },
   },
   {
     front: {
@@ -59,6 +61,9 @@ export const projectCards: FlippingCardProps[] = [
     back: {
       src: "project_honda-integra-type-r-k20-time-attack_before.jpg",
       blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
+    },
+    details: {
+      model: "Honda Integra T. R K20",
     },
   },
 
@@ -71,6 +76,9 @@ export const projectCards: FlippingCardProps[] = [
       src: "project_honda-integra-type-r-k24_before.jpg",
       blurHash: "LFEC]#9Y0J?bxNRiDi%2D$xvxcIT",
     },
+    details: {
+      model: "Honda Integra T. R K24",
+    },
   },
   {
     front: {
@@ -80,6 +88,9 @@ export const projectCards: FlippingCardProps[] = [
     back: {
       src: "project_honda-civic_before.jpg",
       blurHash: "LLGSA3S|$^fg%.t1W9S2}~rrNLoh",
+    },
+    details: {
+      model: "Honda Civic",
     },
   },
   {
@@ -91,6 +102,9 @@ export const projectCards: FlippingCardProps[] = [
       src: "project_acura-rsx-k20-time-attack_before.jpg",
       blurHash: "LWH2cqof~qogRjRj%2j[-;WBWBs:",
     },
+    details: {
+      model: "Acura RSX K20 T.A.",
+    },
   },
   {
     front: {
@@ -101,6 +115,9 @@ export const projectCards: FlippingCardProps[] = [
       src: "project_lotus_before.jpg",
       blurHash: "LMFNh%-TAZoe0$X7,DR+|[aLEhWC",
     },
+    details: {
+      model: "Lotus Elise",
+    },
   },
   {
     front: {
@@ -110,6 +127,9 @@ export const projectCards: FlippingCardProps[] = [
     back: {
       src: "project_s2000-k20_before.jpg",
       blurHash: "LCDvZh_NEL_3DiIoR-M{8_-;?cIU",
+    },
+    details: {
+      model: "Honda S2000 K20",
     },
   },
   {

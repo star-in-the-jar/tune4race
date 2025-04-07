@@ -97,3 +97,13 @@ body {
     1px 1px 0 black;
   -webkit-text-stroke: 0.5px black;
 }
+
+.typewriter {
+  animation:
+    blink-caret .6s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}

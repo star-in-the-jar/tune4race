@@ -1,5 +1,5 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { LazyImage } from "./lazyImage";
 import FlippingCardDetails, { Details } from "./flippingCardDetails";
 
@@ -15,9 +15,11 @@ export interface FlippingCardProps {
 }
 
 const FlippingCard: FC<FlippingCardProps> = ({ front, back, details }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
-    <div className={`group mx-auto w-full perspective`}>
-      <div className="relative w-full transform-style-3d group-hover:rotate-y-180 transition-transform duration-500">
+    <div onClick={() => setIsFlipped(prev => !prev)} className={`group mx-auto w-full perspective`}>
+      <div className={`relative w-full transform-style-3d ${isFlipped ? "rotate-y-180" : ""} transition-transform duration-500 cursor-pointer`}>
         <div className="inset-1 flex justify-center items-center min-h-[200px] md:min-h-[300px] xl:min-h-[400px] overflow-hidden backface-hidden">
           <LazyImage
             src={front.src}
@@ -37,6 +39,7 @@ const FlippingCard: FC<FlippingCardProps> = ({ front, back, details }) => {
             <FlippingCardDetails
               model={details.model}
               features={details.features}
+              isFlipped={isFlipped}
             />
           )}
         </div>
