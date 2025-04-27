@@ -11,7 +11,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LeG8_.ofM_WC_Nt7IUjt_2WBNGj[",
     },
     details: {
-      model: "Porsche 911",
+      model: "Porsche Carrera 4 911 997.1",
     },
   },
   {
@@ -24,7 +24,7 @@ export const projectCards: FlippingCardProps[] = [
       src: "project_acura-rsx-k20_before.jpg",
     },
     details: {
-      model: "Acura RSX K20",
+      model: "Acura RSX k20",
     },
   },
   {
@@ -37,7 +37,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "L2AmrB8w00t-9yZ3]p*000r@4T?v",
     },
     details: {
-      model: "Smart Roadster K20",
+      model: "Smart Roadster 452 K20",
     },
   },
   {
@@ -50,7 +50,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
     },
     details: {
-      model: "Honda Del Sol K20",
+      model: "Honda Del Sol k20",
     },
   },
   {
@@ -63,7 +63,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "L7CQGF00VpIA.lxHD$ozXRxDtm%M",
     },
     details: {
-      model: "Honda Integra T. R K20",
+      model: "Honda Integra DC5",
     },
   },
 
@@ -77,7 +77,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LFEC]#9Y0J?bxNRiDi%2D$xvxcIT",
     },
     details: {
-      model: "Honda Integra T. R K24",
+      model: "Honda Integra DC2 K24",
     },
   },
   {
@@ -90,7 +90,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LLGSA3S|$^fg%.t1W9S2}~rrNLoh",
     },
     details: {
-      model: "Honda Civic",
+      model: "Honda Civic EJ6 K24",
     },
   },
   {
@@ -103,7 +103,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LWH2cqof~qogRjRj%2j[-;WBWBs:",
     },
     details: {
-      model: "Acura RSX K20 T.A.",
+      model: "Acura RSX Type S k20",
     },
   },
   {
@@ -116,7 +116,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LMFNh%-TAZoe0$X7,DR+|[aLEhWC",
     },
     details: {
-      model: "Lotus Elise",
+      model: "Lotus Elise K20",
     },
   },
   {
@@ -129,7 +129,7 @@ export const projectCards: FlippingCardProps[] = [
       blurHash: "LCDvZh_NEL_3DiIoR-M{8_-;?cIU",
     },
     details: {
-      model: "Honda S2000 K20",
+      model: "Honda S2000 k24",
     },
   },
   {
