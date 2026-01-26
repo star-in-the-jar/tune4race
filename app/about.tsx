@@ -42,7 +42,7 @@ const About = () => {
       <Subsection
         title="Kontakt"
         id="kontakt"
-        className="flex md:flex-row flex-col justify-center gap-little-l px-little-m md:px-big-s py-little-l"
+        className="flex md:flex-row flex-col justify-center gap-little-l px-little-m md:px-big-s py-little-l h-full"
       >
         <div className="flex flex-col gap-little-l">
           <div>
@@ -70,11 +70,12 @@ const About = () => {
             <p>*Istnieje możliwość spotkania się w innych godzinach lub w sobotę po wcześniejszym umówieniu się telefonicznym.</p>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.1127455916426!2d16.794901454015495!3d52.42903350017376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470446a0453ae637%3A0x1e88cc687726d92!2stune4race!5e0!3m2!1spl!2spl!4v1742131733286!5m2!1spl!2spl"
-          loading="lazy"
-          className="rounded-lg w-full aspect-video"
-        />
+        <div className="flex-grow-2 w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.1127455916426!2d16.794901454015495!3d52.42903350017376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470446a0453ae637%3A0x1e88cc687726d92!2stune4race!5e0!3m2!1spl!2spl!4v1742131733286!5m2!1spl!2spl"
+            loading="lazy"
+            className="rounded-lg w-full md:min-w-[300px] lg:min-w-[700px] min-h-[400px] lg:min-h-[600px]" />
+        </div>
       </Subsection>
     </Section>
   );
