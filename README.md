@@ -1,3 +1,13 @@
+## Guidelines
+- Project is currently being developed on develop branch (master is out-of-date).
+- Prod updates are made using sftp:
+    ```
+    npm run build
+    sftp tune4race
+    put -r /path-to-repo/out/* /home/tuneraceal/www/
+    ```
+Changes will be visible up to a few minutes.
+
 ## License
 This project is proprietary and not for public distribution.
 
